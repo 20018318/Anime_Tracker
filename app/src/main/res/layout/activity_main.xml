@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/wallpaper2"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Name:" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvEpisodes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Episodes:"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etEpisodes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Status:" />
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerItems" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxFav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favourite"
+        app:buttonTint="#000000" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Rating:" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:shadowColor="#000000"
+            android:text="add"
+            android:textColor="#EA8056"
+            app:backgroundTint="#EFE97A"
+            app:rippleColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="my list"
+            android:textColor="#EA8056"
+            app:backgroundTint="#EFE97A" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#EA8056"
+        app:backgroundTint="#EFE97A"
+        app:iconTint="#FFFFFF" />
+
+</LinearLayout>

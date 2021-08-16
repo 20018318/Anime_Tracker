@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Anime Tracker</string>
+    <string-array name="spinnerItems">
+        <item>Watched</item>
+        <item>Watching</item>
+        <item>Want to watch</item>
+    </string-array>
+    <string-array name="spinnerItems2">
+        <item>All</item>
+        <item>Watched</item>
+        <item>Watching</item>
+        <item>Want to watch</item>
+    </string-array>
+</resources>
